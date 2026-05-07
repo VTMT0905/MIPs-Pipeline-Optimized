@@ -48,7 +48,7 @@ module execute(
     wire [31:0] alu_out;        // ALU result -> ex_mem
     wire        alu_zero;       // ALU zero flag -> ex_mem
 
- // ?? Forwarding mux outputs ??????????????????????????????????
+ // Forwarding mux outputs 
     // These replace rdata1 and rdata2 going into the ALU
     reg [31:0] forward_a;   // forwarded value for ALU input A (rdata1)
     reg [31:0] forward_b;   // forwarded value for ALU input B (rdata2)
